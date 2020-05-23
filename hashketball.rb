@@ -163,16 +163,14 @@ def shoe_size(player_name)
 end
 
 def team_colors(team_name)
-  nba_colors = [ ]
   game_hash.each do |home_away, team|
    # binding.pry
     team.each do |stats, value|
       if stats == :colors
-        nba_colors.push(value)
+        return value
       end
     end
   end
-  nba_colors
 end
 
 def team_names
