@@ -173,10 +173,7 @@ def team_colors(team_name)
 end
 
 def team_names
-  game_hash.each do |home_away, team|
-    team[:team_name]
    # binding.pry
-  end
 end
 
 def player_numbers(team_name)
