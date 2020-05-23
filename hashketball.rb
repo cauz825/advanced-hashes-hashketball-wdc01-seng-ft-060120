@@ -176,6 +176,7 @@ end
 def team_names
   game_hash.each do |home_away, team|
     team[:team_name]
+    binding.pry
   end
 end
 
