@@ -182,17 +182,19 @@ def team_names
 end
 
 def player_numbers(team_name)
+  nba_jerseys = [ ]
   game_hash.each do |home_away, team|
     if team[:team_name] == team_name
       team.each do |stats, value|
         if stats == :players
-          value.collect do |player|
+          value.each do |player|
             binding.pry
-            player[:number]
+            nba_jerseys.push(player[:number])
           end
         end
       end
     end
+  nba_jerseys
   end
 end
 
