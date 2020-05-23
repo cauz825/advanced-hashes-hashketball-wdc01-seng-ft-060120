@@ -187,6 +187,7 @@ def player_numbers(team_name)
       team.each do |stats, value|
         if stats == :players
           value.collect do |player|
+            binding.pry
             player[:number]
           end
         end
