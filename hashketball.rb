@@ -187,8 +187,8 @@ def player_numbers(team_name)
     if team[:team_name] == team_name
       team.each do |stats, value|
         if stats == :players
-          value.each do |player|
-            binding.pry
+          value.collect do |player|
+            player[:number]
           end
         end
       end
