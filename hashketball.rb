@@ -167,7 +167,7 @@ def team_colors(team_name)
     team.each do |stats, value|
       if stats == :colors
       end
-      return value
+      return team[:colors].to_ary
     end
   end
 end
