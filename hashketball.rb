@@ -188,7 +188,8 @@ def player_numbers(team_name)
         binding.pry
         if stats == :players
           value.
-      
+        end
+      end
     end
   end
 end
