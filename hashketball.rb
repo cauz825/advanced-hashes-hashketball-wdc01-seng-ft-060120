@@ -168,7 +168,6 @@ def team_colors(team_name)
       if stats == :colors
         return value
       end
-      end
     end
   end
 end
