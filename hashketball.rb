@@ -188,13 +188,11 @@ def player_numbers(team_name)
       team.each do |stats, value|
         if stats == :players
           value.each do |player|
-            # binding.pry
-            nba_jerseys.push(player[:number])
+            binding.pry
           end
         end
       end
     end
-  nba_jerseys
   end
 end
 
