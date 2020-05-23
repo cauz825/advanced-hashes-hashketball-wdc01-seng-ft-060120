@@ -187,8 +187,6 @@ def player_numbers(team_name)
       team.each do |stats, value|
         binding.pry
         if stats == :players
-          value.
-        end
       end
     end
   end
