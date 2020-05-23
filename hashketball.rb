@@ -183,7 +183,7 @@ end
 
 def player_numbers(team_name)
   game_hash.collect do |home_away, team|
-    team[:players][:number]
+    team[players][:number]
   end
 end
 
