@@ -167,7 +167,7 @@ def team_colors(team_name)
     team.each do |stats, value|
       binding.pry
       if stats == :colors
-        return value
+        return home_away[value]
       end
     end
   end
