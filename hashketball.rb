@@ -166,7 +166,7 @@ def team_colors(team_name)
   game_hash.each do |home_away, team|
     team.each do |stats, value|
       if stats == :colors
-        return value.to_a
+        return value
       end
     end
   end
