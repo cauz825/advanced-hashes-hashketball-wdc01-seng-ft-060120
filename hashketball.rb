@@ -182,8 +182,7 @@ def team_names
 end
 
 def player_numbers(team_name)
-  nba_jerseys = [ ]
-  game_hash.each do |home_away, team|
+  nba_jerseys = game_hash.each do |home_away, team|
     if team[:team_name] == team_name
       team.each do |stats, value|
         if stats == :players
