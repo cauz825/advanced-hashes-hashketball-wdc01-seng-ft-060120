@@ -188,13 +188,13 @@ def player_numbers(team_name)
       team.each do |stats, value|
         if stats == :players
           value.each do |player|
-            team_name.push(player[:number])
+            nba_jerseys.push(player[:number])
           end
         end
       end
     end
   end
-  team_name
+  nba_jerseys
 end
 
 def player_stats(player_name)
