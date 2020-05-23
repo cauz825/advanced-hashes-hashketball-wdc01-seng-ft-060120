@@ -220,8 +220,9 @@ def big_shoe_rebounds
         value.each do |player|
           # binding.pry
           if player[:shoe] > big_shoe
-            player[:shoe] = big_shoe
-            player[:rebounds] = rebounds
+            big_shoe = player[:shoe]
+            rebounds = player[:rebounds]
+            # binding.pry
           end
         end
       end
