@@ -184,8 +184,10 @@ end
 def player_numbers(team_name)
   game_hash.each do |home_away, team|
     if team[:team_name] == team_name
-      team.collect do |stats, value|
-        if stats
+      team.each do |stats, value|
+        binding.pry
+        if stats == :players
+          value.
       
     end
   end
