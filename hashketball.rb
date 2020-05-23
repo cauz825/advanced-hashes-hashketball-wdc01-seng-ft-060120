@@ -168,7 +168,7 @@ def team_colors(team_name)
    # binding.pry
     team.each do |stats, value|
       if stats == :colors
-        nba_colors.push(team[value])
+        nba_colors.push(value)
       end
     end
   end
