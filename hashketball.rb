@@ -212,5 +212,11 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  #code
+  big_shoe = 0
+  rebounds = 0
+  game_hash.each do |home_away, team|
+    team.each do |stats, value|
+      binding.pry
+    end
+  end
 end
